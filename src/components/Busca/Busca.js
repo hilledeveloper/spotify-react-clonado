@@ -39,7 +39,7 @@ class Busca extends Component {
     return (
       <div>
         <label>Busque por artistas, álbuns ou músicas</label>
-        <InputBuscar placeholder="Comece a escrever..." onChange={this.buscar} type="search" value={this.state.query} />
+        <InputBuscar placeholder="Busque album ou música..." onChange={this.buscar} type="search" value={this.state.query} />
         {console.log(this.props.albums)}
         {
           this.props.albums.items.length > 0 ? (
